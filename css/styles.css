@@ -34,7 +34,7 @@ header{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    padding: 16px;    
+    padding: 16px;
     background-color: white;
     left: 0;
     right: 0;
@@ -42,6 +42,7 @@ header{
 .banner h2{
     margin: 0;
 }
+
 header div{
     display: flex;
     align-items: center;
@@ -71,7 +72,7 @@ h1, .fas, .far, .fab{ font-size: 1.5rem; }
     background-color: white;
     padding: 16px;
     width: 90%;
-    
+
 }
 .banner{
     background-image: url(/img/FG-Menu-Hero.jpg);
@@ -92,11 +93,39 @@ h1, .fas, .far, .fab{ font-size: 1.5rem; }
     max-width: 500px;
 }
 main{
-    padding: 60px 3%;
+    padding: 0 60px 0 60px;
     text-align: center;
-    
 }
+main p a:nth-of-type(1){
+  text-decoration: underline;
+  font-size: 0.75rem;
+}
+main p:nth-of-type(1){
+    font-size: 0.75rem;
+}
+section p:last-of-type{
+  font-size: 1rem;
+  font-weight: 600;
+}
+img{
+  display: initial;
+}
+footer{
+  background-color: red;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
+}
+.story-container a{
+  border: 2px solid white;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bolder;
+
+}
 @media (hover:none){
     .banner{ height: 100vh}
 }
@@ -105,7 +134,7 @@ main{
     .menu-btn{ display: none; }
     h1{ margin: 0; }
     nav{
-        display: flex !important;        
+        display: flex !important;
         justify-content: flex-end;
         width: auto;
         position: static;
@@ -115,12 +144,17 @@ main{
     nav ul{ display: flex; }
     nav li{ margin-right: 10px; }
     nav a:hover{ text-decoration: underline; }
+    main p:nth-of-type(1),
+    main p a:nth-of-type(1){
+      width: 100%;
+      text-align: end
+    }
     .mobile {display: none;}
     .wrap{
         display: flex;
-        flex-wrap: wrap;                
+        flex-wrap: wrap;
         width: 60%;
-        max-width: 800px;        
+        max-width: 800px;
         justify-content: center;
     }
     .separators li::after{
@@ -137,7 +171,10 @@ main{
         display: flex;
         width: 70%;
         justify-content: space-around;
-                        
-    }   
-
+    }
+}
+@media(min-width: 1024px){
+  main{
+    padding: 0 110px;
+  }
 }
