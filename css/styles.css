@@ -1,0 +1,143 @@
+html{
+    font-family: arial, sans-serif;
+    line-height: 1.5rem;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+color: red;
+}
+nav a{
+    font-weight: 900;
+    display: block;
+    margin: 16px 0;
+}
+nav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 16px;    
+    background-color: white;
+    left: 0;
+    right: 0;
+}
+.banner h2{
+    margin: 0;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+h1{ margin: 0 0 0 1rem; }
+h1 a{
+    color: red;
+    font-weight: 900;
+}
+h1, .fas, .far, .fab{ font-size: 1.5rem; }
+.active{
+    color: red;
+}
+.overlay{
+    background-color: rgba(50, 50, 50, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations{
+    background-color: white;
+    padding: 16px;
+    width: 90%;
+    
+}
+.banner{
+    background-image: url(/img/FG-Menu-Hero.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    color: white;
+    padding: 15%;
+}
+.banner section{
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+}
+main{
+    padding: 60px 3%;
+    text-align: center;
+    
+}
+
+@media (hover:none){
+    .banner{ height: 100vh}
+}
+
+@media (min-width: 768px){
+    .menu-btn{ display: none; }
+    h1{ margin: 0; }
+    nav{
+        display: flex !important;        
+        justify-content: flex-end;
+        width: auto;
+        position: static;
+        flex: 1;
+        border-top: none;
+    }
+    nav ul{ display: flex; }
+    nav li{ margin-right: 10px; }
+    nav a:hover{ text-decoration: underline; }
+    .mobile {display: none;}
+    .wrap{
+        display: flex;
+        flex-wrap: wrap;                
+        width: 60%;
+        max-width: 800px;        
+        justify-content: center;
+    }
+    .separators li::after{
+        content:'\2022';
+        padding: 0 4px;
+    }
+    .separators li:last-child::after{content: '';}
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+                        
+    }   
+
+}
